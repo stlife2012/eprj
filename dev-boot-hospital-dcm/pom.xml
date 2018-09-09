@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>stlife.dev.boot.hospital.dcm</groupId>
+    <artifactId>dev-boot-hospital-dcm</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>dev-boot-hospital-dcm</name>
+    <description>DCM project for Spring Boot</description>
+
+    <parent>
+        <groupId>com.stlife</groupId>
+        <artifactId>eprj</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.cloud.stlife</groupId>
+            <artifactId>bioformats</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/bioformats.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.cloud.stlife</groupId>
+            <artifactId>dcm4che-imageio-5.13.3</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/dcm4che-imageio-5.13.3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.cloud.stlife</groupId>
+            <artifactId>dcm4che-image-5.13.3</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/dcm4che-image-5.13.3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.cloud.stlife</groupId>
+            <artifactId>dcm4che-tool-common-5.13.3</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/dcm4che-tool-common-5.13.3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.cloud.stlife</groupId>
+            <artifactId>dcm4che-tool-dcm2jpg-5.13.3</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/dcm4che-tool-dcm2jpg-5.13.3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.cloud.stlife</groupId>
+            <artifactId>dcm4che-imageio-opencv-5.13.3</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/dcm4che-imageio-opencv-5.13.3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.cloud.stlife</groupId>
+            <artifactId>weasis-opencv-core-3.0.0-RC1</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/weasis-opencv-core-3.0.0-RC1.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.dcm4che</groupId>
+            <artifactId>dcm4che-core</artifactId>
+            <version>5.13.3</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>dcm</id>
+            <url>http://www.dcm4che.org/maven2/</url>
+        </repository>
+    </repositories>
+
+</project>
