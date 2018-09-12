@@ -10,7 +10,6 @@
 
     <name>dev-boot-hospital-dcm</name>
     <description>DCM project for Spring Boot</description>
-
     <parent>
         <groupId>com.stlife</groupId>
         <artifactId>eprj</artifactId>
