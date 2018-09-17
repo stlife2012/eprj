@@ -27,6 +27,8 @@
         mr      package:boot.ml.mr
     dl  深度学习
         pytorch package:boot.dl.pytorch
+    ui  前端技术
+    tools 工具类，包括运维、管理等
   ```
   - 分布式(cloud)
     
@@ -36,3 +38,4 @@
 + ml      机器学习相关
 + dl      深度学习相关
 + python  python常用工具类
+

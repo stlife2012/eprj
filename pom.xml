@@ -8,9 +8,13 @@
     <artifactId>eprj</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
-  <!--  <modules>
-        <module>dev_sc_ml_spark_mllib</module>
-    </modules>-->
+    <modules>
+        <module>dev-sc-ml-spark-mllib</module>
+        <module>std-java-netty</module>
+    </modules>
+    <!--  <modules>
+          <module>dev_sc_ml_spark_mllib</module>
+      </modules>-->
 
     <parent>
         <groupId>org.springframework.boot</groupId>
