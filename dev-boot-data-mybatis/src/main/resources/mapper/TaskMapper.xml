@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.stlife.data.db.mybatis.mapper.TaskMapper" >
+  <resultMap id="BaseResultMap" type="com.stlife.data.db.mybatis.pojo.TaskInfo" >
+    <id column="uid" property="uid" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="create_ac" property="createAc" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    uid, remark, create_time, create_ac
+  </sql>
+  <select id="queryByPage" resultMap="BaseResultMap" parameterType="java.util.Map" >
+    select
+    <include refid="Base_Column_List" />
+    from task_info
+    where 1=1
+    <if test="remark != null" >
+      and remark = #{remark,jdbcType=VARCHAR}
+    </if>
+    <if test="create_ac != null" >
+      limit #{create_ac,jdbcType=VARCHAR},10
+    </if>
+  </select>
+</mapper>
